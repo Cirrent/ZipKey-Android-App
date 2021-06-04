@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:activity="com.sampleapp.ui.fragment.LoginFragment"
+    tools:ignore="MissingPrefix,ContentDescription">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/house" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="30dp">
+
+        <LinearLayout
+            android:id="@+id/layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_back_arrow"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_back_arrow" />
+
+            <TextView
+                android:id="@+id/text_title"
+                fontPath="fonts/montserrat_regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/sign_in_to_your_account"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_24" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_hint_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_title"
+            android:layout_marginTop="60dp"
+            android:text="@string/username"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_10"
+            fontPath="fonts/montserrat_regular.ttf" />
+
+        <EditText
+            android:id="@+id/edit_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_hint_username"
+            android:background="@null"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+
+            fontPath="fonts/notosans_regular.ttf" />
+
+        <View
+            android:id="@+id/line_edit_login"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/edit_login"
+            android:background="@color/yellow" />
+
+        <TextView
+            android:id="@+id/text_hint_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line_edit_login"
+            android:layout_marginTop="25dp"
+            android:text="@string/password"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_10"
+            fontPath="fonts/montserrat_regular.ttf" />
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_hint_password"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            fontPath="fonts/notosans_regular.ttf" />
+
+        <View
+            android:id="@+id/line_edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/edit_password"
+            android:background="@color/yellow" />
+
+        <LinearLayout
+            android:id="@+id/layout_show_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/line_edit_password">
+
+            <CheckBox
+                android:id="@+id/checkbox_show_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yellow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_14"
+                android:text="@string/setup_network_show_password"
+                fontPath="fonts/notosans_regular.ttf" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_sign_in"
+            style="@style/AppTheme.Button.Yellow"
+            android:layout_above="@+id/button_hidden2"
+            android:layout_marginBottom="20dp"
+            android:text="@string/sign_in" />
+
+        <TextView
+            android:id="@+id/button_hidden2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button_hidden1"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:layout_marginBottom="20dp"
+            android:text="@string/skip" />
+
+        <TextView
+            android:id="@+id/button_hidden1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:layout_marginBottom="20dp"
+            android:text="@string/skip" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

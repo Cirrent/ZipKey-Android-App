@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Text sizes-->
+    <dimen name="text_10">13sp</dimen>
+    <dimen name="text_12">14sp</dimen>
+    <dimen name="text_13">15sp</dimen>
+    <dimen name="text_14">16sp</dimen>
+    <dimen name="text_15">17sp</dimen>
+    <dimen name="text_24">26sp</dimen>
+
+    <!--Text sizes for scalable screens-->
+
+</resources>

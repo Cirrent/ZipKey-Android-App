@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "530988377128",
+    "firebase_url": "https://zipkey-android.firebaseio.com",
+    "project_id": "zipkey-android",
+    "storage_bucket": "zipkey-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:530988377128:android:0670db278c988cb7",
+        "android_client_info": {
+          "package_name": "com.cirrent.ZipKeyApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "530988377128-blan8o261eojbu2paqllnmgdqmg7a7fb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtoKEB8OHUdJLArdrw_1hQw6BEX78XL2E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
