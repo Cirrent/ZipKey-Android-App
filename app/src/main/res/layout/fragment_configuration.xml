@@ -1,0 +1,185 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="25dp"
+    android:fitsSystemWindows="true"
+    tools:context="com.sampleapp.ui.fragment.ConfigurationFragment"
+    tools:ignore="MissingPrefix,ContentDescription">
+
+    <TextView
+        android:id="@+id/text_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Onboarding type:"
+        android:textColor="@color/dark_gray_text"
+        android:textSize="@dimen/text_15"
+        fontPath="fonts/montserrat_regular.ttf" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_marginLeft="16dp"
+        android:checkedButton="@id/radio_ble"
+        android:layout_below="@+id/text_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_ble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BLE"
+            fontPath="fonts/montserrat_regular.ttf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_hint_prefix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ble_prefix"
+                android:textColor="@color/dark_gray_text"
+                android:textSize="@dimen/text_10"
+                fontPath="fonts/montserrat_regular.ttf" />
+
+            <EditText
+                android:id="@+id/edit_prefix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:maxLines="1"
+                android:inputType="text"
+                android:hint="@string/ble_prefix_hint"
+                android:text="@string/ca_ble"
+                android:textSize="14dp" />
+
+            <View
+                android:id="@+id/line_prefix"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/yellow" />
+
+        </LinearLayout>
+
+        <RadioButton
+            android:id="@+id/radio_softap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soft AP"
+            fontPath="fonts/montserrat_regular.ttf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_hint_soft_ap_ssid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/soft_ap_ssid"
+                android:textColor="@color/dark_gray_text"
+                android:textSize="@dimen/text_10"
+                fontPath="fonts/montserrat_regular.ttf" />
+
+            <EditText
+                android:id="@+id/edit_soft_ap_ssid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:maxLines="1"
+                android:inputType="text"
+                android:hint="@string/dialog_title"
+                android:text="ca-softap"
+                android:textSize="@dimen/text_14" />
+
+            <View
+                android:id="@+id/line_edit_soft_ap_ssid"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/yellow" />
+
+        </LinearLayout>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/text_version_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/radio_group"
+        android:text="Version"
+        android:textColor="@color/dark_gray_text"
+        android:textSize="@dimen/text_10"
+        fontPath="fonts/montserrat_regular.ttf" />
+
+    <LinearLayout
+        android:id="@+id/layout_version_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/text_version_title">
+
+        <TextView
+            android:id="@+id/text_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="1.4.0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_14"
+            fontPath="fonts/montserrat_regular.ttf" />
+
+        <TextView
+            android:id="@+id/text_version_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="build 33"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_14"
+            fontPath="fonts/montserrat_regular.ttf" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_erase_personal_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/layout_version_data"
+        android:text="I want to get my personal data erased"
+        android:textColor="@color/light_gray"
+        android:textSize="@dimen/text_13"
+        fontPath="fonts/montserrat_regular.ttf" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/floating_action_button"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_check_mark_white" />
+
+</RelativeLayout>

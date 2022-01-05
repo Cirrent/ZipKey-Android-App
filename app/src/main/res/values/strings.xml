@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">Cirrent Wi-Fi Onboarding</string>
+    <string name="sign_in">Sign in</string>
+    <string name="dialog_title">Please enter SoftAP SSID</string>
+    <string name="conf_both_empty">At least one field should be filled in</string>
+    <string name="choose_way">Choose the way to connect your product</string>
+    <string name="bt_not_supported">Bluetooth (not supported)</string>
+    <string name="wifi">WiFi</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="ble_onboarding_type">BLE</string>
+    <string name="soft_ap_onboarding_type">Soft AP</string>
+
+    <!--SetupNetwork-->
+    <string name="setup_network_title">Connect to Your Wi-Fi</string>
+    <string name="setup_network_body">Choose the network that you want your product to connect to.</string>
+    <string name="setup_network_network">Network</string>
+    <string name="setup_network_password">Password</string>
+    <string name="setup_network_show_password">Show Password</string>
+    <string name="add_hidden_network">Connect to Hidden Network</string>
+    <string name="setup_ssid">SSID</string>
+    <string name="security_type">Security Type</string>
+    <string name="getting_device_info_via_soft_ap">Getting device info via SoftAP</string>
+
+    <!--LoadingScreen-->
+    <string name="load_find_devices">Looking For Products…</string>
+
+    <!--SuccessScreen-->
+    <string name="success">Success!</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <!--HomeScreen-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="home_title">My Products</string>
+    <string name="zipkey">ZipKey</string>
+
+    <!--DeviceInfoScreen-->
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+
+    <!--LoginScreen-->
+    <string name="sign_in_to_your_account">Sign in to your account</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="logging_in">Logging in</string>
+
+    <!--HistoryScreen-->
+    <string name="onboarding_history">Onboarding History</string>
+    <string name="history_is_empty">History is empty</string>
+    <string name="device_id">Device ID:</string>
+    <string name="account_id">Account ID:</string>
+    <string name="clear_all">Clear all</string>
+    <string name="question_clear_onboarding_history">Clear onboarding history?</string>
+
+    <!--ConfigurationScreen-->
+    <string name="configuration">Configuration</string>
+    <string name="ble_prefix">CA BLE Service Prefix</string>
+    <string name="ble_prefix_hint">Please enter BLE Prefix</string>
+    <string name="soft_ap_ssid">Soft AP SSID</string>
+    <string name="configuration_is_saved">Configuration has been saved</string>
+    <string name="ca_ble">CA_BLE</string>
+
+    <!--SendCredentialsScreen-->
+    <string name="sending_via_soft_ap">Sending Credentials via Soft AP…</string>
+
+    <!--SoftApConnectedScreen-->
+    <string name="connected_to">Connected to</string>
+    <string name="cant_find_soft_ap_network">Can\'t find SoftAP network, please try again in 10 seconds</string>
+    <string name="cant_connect_to_device_soft_ap_network">Can\'t connect to device SoftAP network</string>
+    <string name="connecting_to_device_via_soft_ap">Connecting to device via Soft AP…</string>
+    <string name="disconnect_from_soft_ap">Disconnecting from the Soft Ap network…</string>
+    <string name="smart_switch_msg">In order to get the best experience during the Soft AP on-boarding process, it\'s highly recommended to turn off a feature(Smart Network/Smart Switch) that switches your phone to the mobile network.</string>
+    <string name="smart_network_title">Smart Network feature detected</string>
+    <string name="smart_network_positive_button">Advanced Wi-Fi Settings</string>
+    <string name="smart_network_negative_button">Proceed anyway</string>
+
+    <!--SendCredentials-->
+    <string name="finishing_an_interrupted_onboarding_process">Finishing an interrupted onboarding process…</string>
+
+    <!--Toasts-->
+    <string name="please_wait">Please wait for a while</string>
+    <string name="enter_ssid">Please enter ssid</string>
+    <string name="select_network">Please select network from the list</string>
+    <string name="failed_to_return_to_network">Failed to return to network that connected to the internet</string>
+    <string name="joining_failed_try_again">Joining network failed, try again.</string>
+    <string name="cant_get_info">Can\'t get device info</string>
+    <string name="incorrect_priority_value">Priority value should be between 150 and 255</string>
+    <string name="invalid_scd_public_key_reboot_device_and_try_again">Invalid scdPublicKey. Please reboot your device and try again.</string>
+    <string name="incorrect_password_length">Password should have at least 8 characters</string>
+
+    <!--Onboarding Via Bluetooth-->
+    <string name="ble_not_supported">API is too old or BLE is not supported.</string>
+    <string name="failed_to_find_device_via_bluetooth">Failed to find device. Please, try again.</string>
+    <string name="time_limit_exceeded">Operation time limit has been exceeded. Please, try again.</string>
+    <string name="bt_turned_off">Bluetooth is turned off</string>
+    <string name="searching_device">Searching for device…</string>
+    <string name="not_connected">Connection hasn\'t been established</string>
+    <string name="bt_joining_failed">Joining network failed. Please, try again.</string>
+    <string name="bt_checking_status">Checking status…</string>
+    <string name="bt_sending_creds">Sending credentials…</string>
+    <string name="connected_getting_info">Connected. Getting info…</string>
+
+    <!--Location Service-->
+    <string name="location_service_permission_needed">In order to start onboarding it needs permission to use your location.</string>
+    <string name="location_service_should_be_enabled">"Location service" should be enabled during onboarding. Please enable "Location service" in Settings.</string>
+    <string name="go_to_settings">Go to Settings</string>
+    <string name="tap_the_to_start_onboarding">Tap the "+" to start onboarding</string>
+    <string name="skip">Skip</string>
+    <string name="cirrent">Cirrent</string>
+    <string name="wi_fi_onboarding">Wi-Fi Onboarding</string>
+    <string name="is_now_connected_to">is now connected to</string>
+</resources>

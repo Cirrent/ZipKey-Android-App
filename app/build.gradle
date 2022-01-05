@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion '29.0.3'
+    defaultConfig {
+        applicationId "com.cirrent.ZipKeyApp"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 57
+        versionName "1.6.11"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [appName: "@string/app_name"]
+            buildConfigField "String", "API_PRODUCT_CLOUD_BASE_URL", API_PRODUCT_CLOUD_RELEASE_URL
+        }
+
+        debug {
+            debuggable true
+            manifestPlaceholders = [appName: "@string/app_name"]
+            buildConfigField "String", "API_PRODUCT_CLOUD_BASE_URL", API_PRODUCT_CLOUD_RELEASE_URL
+        }
+
+        staging {
+            debuggable true
+            manifestPlaceholders = [appName: "@string/app_name"]
+            buildConfigField "String", "API_PRODUCT_CLOUD_BASE_URL", API_PRODUCT_CLOUD_STAGE_URL
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'com.cirrent:cirrentsdk:1.6.10'
+    implementation platform('com.google.firebase:firebase-bom:29.0.1')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'io.github.inflationx:calligraphy3:3.1.1'
+    implementation 'io.github.inflationx:viewpump:2.0.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'io.appium:java-client:7.3.0'
+}
+
+
+apply plugin: 'com.google.gms.google-services'
